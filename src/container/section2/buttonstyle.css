@@ -26,3 +26,29 @@ margin: 34px 0;
 .but-item p{
     font-size: 20px;
 }
+.but-item:hover{
+    width: 188px;
+    height: 188px;
+    cursor: pointer;
+    margin: 10px;
+}
+@media screen and (max-width:1200px) {
+    .but-item{
+        width: 140px;
+        height: 140px;
+    }
+    .but-item img{
+        width: 64px;
+        height: 47px;
+        margin-bottom: 6px;
+    }
+    .but-item p{
+        font-size: 15px;
+    }
+    .but-item:hover{
+        width: 144px;
+        height: 144px;
+        cursor: pointer;
+        margin: 10px;
+    }
+}

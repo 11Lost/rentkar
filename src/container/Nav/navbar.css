@@ -1,13 +1,14 @@
-
-.state ,.cart{
+.state,
+.cart {
     width: 131px;
     height: 50px;
-    background-image: linear-gradient(#1bacf3,#19e9b9);
+    background-image: linear-gradient(#1bacf3, #19e9b9);
     border-radius: 4px;
 
 }
 
-.stateMain ,.cartMain {
+.stateMain,
+.cartMain {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -17,65 +18,75 @@
     width: 111px;
     height: 32px;
     margin: 2.5px;
-  }
+}
 
 
 
-.stateMain img,.cartMain img {
+.stateMain img,
+.cartMain img {
     width: 32.3px;
     height: 32.3px;
 }
-.searchBar{
+
+.searchBar {
     width: 512px;
     height: 50px;
     background-color: #f0f8ff;
-    border: 2px solid ;
+    border: 2px solid;
     display: flex;
     justify-content: space-around;
     border-radius: 4px;
 
 }
-#Search{
-    width: 458px  ;
+
+#Search {
+    width: 458px;
     height: 50px;
     border: none;
     
-    
-}
-.searchBar button{
-height: 50px;
-width: 50px;
-background-color: #f0f8ff;
-border: none;
+
+
 
 }
 
-.login{
+.searchBar button {
+    height: 50px;
+    width: 50px;
+    background-color: #f0f8ff;
+    border: none;
+
+}
+
+.login {
     width: 180px;
     height: 50px;
-    background-image: linear-gradient(#1bacf3,#19e9b9);
+    background-image: linear-gradient(#1bacf3, #19e9b9);
     color: #f0f8ff;
     padding: auto;
-display: flex;
-align-items: center;
-justify-content: center;
-border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
 }
-.login p{
+
+.login p {
     font-size: 17px;
 }
-#burgarMain{
+
+#burgarMain {
     color: #f0f8ff;
     height: 40px;
     width: 40px;
 }
-#burgarMain-cl{
+
+#burgarMain-cl {
     color: #f0f8ff;
     height: 40px;
     width: 40px;
     display: none;
 }
-#burgar-list{
+
+#burgar-list {
     display: none;
     width: 253px;
     height: 334px;
@@ -88,19 +99,174 @@ border-radius: 4px;
 
 
 }
-#burgar,.login,.cart,.state,.logo:hover{
-cursor: pointer;
+
+#burgar,
+.login,
+.cart,
+.state,
+.logo:hover {
+    cursor: pointer;
 }
-#burgar-list ul{
+
+#burgar-list ul {
     list-style: none;
 
 }
-#burgar-list ul li{
+
+#burgar-list ul li {
     list-style: none;
-margin: 38px;
+    margin: 38px;
 }
-#burgar-list ul li:hover{
-color: #19e9b9;
-cursor: pointer;
+
+#burgar-list ul li:hover {
+    color: #19e9b9;
+    cursor: pointer;
+
+}
+
+.nav-but-2 {
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+
+    .state,
+    .cart,
+    .login {
+        display: none;
+    }
+
+    nav {
+        padding: 0 30px;
+    }
+
+    .nav-but-2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 10px;
+    }
+
+    .stateMain-2 img,
+    .cartMain-2 img {
+        width: 25.3px;
+        height: 25.3px;
+    }
+
+    .state-2,
+    .cart-2 {
+        width: 92px;
+        height: 38px;
+        background-image: linear-gradient(#1bacf3, #19e9b9);
+        border-radius: 4px;
+        margin-right: 5px;
+    }
+
+    .stateMain-2,
+    .cartMain-2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        color: antiquewhite;
+        background-color: black;
+        width: 87px;
+        height: 32px;
+        margin: 2.5px;
+    }
+
+    .login-2 {
+        width: 92px;
+        height: 38px;
+        background-image: linear-gradient(#1bacf3, #19e9b9);
+        color: #f0f8ff;
+        padding: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+    }
+
+    .login-2 p {
+        font-size: 13px;
+color: #191919;
+    }
+
+    #burgar-list {
+        height: 410px;
+        
+    }
+}
+@media screen and (max-width:750px) {
+    .logo{
+        width: 110px;
+
+    }
+    nav{
+        height: 100px;
+    }
+    #burgar-list {
+      
+        top: 100px;
+    }
+    #Search{
+        width: 50vw;
+        height: 30px;
+    }
+    .searchBar {
+        width: 58vw;
+        height: 30px;
+    }
+    .searchBar button{
+        height: 30px;
+        width: 30px;
+    }
+   
+
+}
+@media screen and (max-width:500px) {
+#Search{
+   width: 150px;
+   height: 30px;
+   border-bottom-left-radius: 25px;
+   border-top-left-radius: 25px;
+
+}
+nav{
+    height: 80px;
+}
+#burgar-list {
+      
+    top: 80px;
+}
+.logo img{
+    width: 120px;
+    height: 20px;
+
+}
+.searchBar{
+ width: 180px;
+ height: 30px;
+ border-radius: 25px;
+
+
+ 
+}
+.searchBar button{
+    height: 30px;
+    width: 30px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    
+
+}
+.searchBar button img{
+    height: 20px;
+    width: 20px;
+    margin: auto;
+}
+#burgarMain ,#burgarMain-cl{
+    width: 30px;
+    height: 30px;
+}
 
 }

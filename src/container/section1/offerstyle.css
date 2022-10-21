@@ -12,5 +12,13 @@ column-gap: 10px;
 .offer1 img{
     width: 83vw;
 
-    height: 574;
+}
+@media screen and (max-width:500px) {
+.offer1 img{
+    width: 93vw;
+   
+
+    
+
+}
 }

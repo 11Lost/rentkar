@@ -36,7 +36,7 @@ export const Card = () => {
       <div className="cardMain">
         <div className='img-lable2'>New</div>
         <img src={item2} alt="" className='Img-item' />
-        <div className="name-card">Gaming Computer</div>
+        <div className="name-card">GamingPC</div>
         <div className="deliverd">1 Day <img src={truck} alt="" /></div>
         <div className="price-card">
           <p>Start on</p>
@@ -48,7 +48,7 @@ export const Card = () => {
       <div className="cardMain">
 
         <img src={item3} alt="" className='Img-item' />
-        <div className="name-card">Playstation 5-king</div>
+        <div className="name-card">Playstation 5</div>
         <div className="deliverd">1 Day <img src={truck} alt="" /></div>
         <div className="price-card">
           <p>Start on</p>
